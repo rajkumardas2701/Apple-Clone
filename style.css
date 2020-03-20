@@ -1,40 +1,48 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-		margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border: 2px solid red;
+  height: 100vh;
+  min-width: 1500px;
 }
 
 .mainSection {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  /* border: 1px solid red; */
-  background: url("img/hero.jpg") no-repeat;
-	height: 615px;
-	width: 1300px;
-	min-width: 600px;
+  margin: 0;
+  background: url("img/Hero1.jpg") no-repeat;
+  background-size: 1530px 760px;
+  height: 80%;
+  min-width: 1500px;
+  min-height: 700px;
+  width: 75%;
+  border: 2px solid red;
 }
 
 .navBar {
-	display: grid;
+  position: relative;
+  top: 5px;
+  display: grid;
 	grid-template-columns: repeat(8, 10%) 1fr;
-	width: 80%;
+	width: 70%;
 	height: 40px;
-	margin: 80px auto;
+	margin: 100px auto;
 	border: 1px solid #757575;
 	border-radius: 5px;
-	justify-items: center;
+	/* justify-content: center; */
 	place-items: center;
 	background: linear-gradient(#8c8c8c 50%,#757575 50%);
 	font-size: 13px;
 	line-height: 18px;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-	color: whitesmoke;
+  color: whitesmoke;
+  border: 2px solid red;
 }
 
 .navBaritems {
@@ -101,13 +109,15 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	/* border: 1px solid greenyellow; */
-	width: 1300px;
+	min-width: 1500px;
+  width: 75%;
 	
 }
 
 .promo {
 	object-fit: cover;
-	width: 100%;
+  width: 100%;
+  padding: 3px 2px 0 0;
 }
 
 .footerMain {
@@ -128,6 +138,7 @@ font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 
 font-size: x-small;
 margin: 0;
 text-decoration: none;
+color: #5E5E5E;
 /* border: 2px solid blueviolet; */
 }
 
@@ -148,26 +159,49 @@ text-decoration: none;
 .ftText2 {
   text-decoration: none;
   height: 100%;
-  padding-top: 0;
+  padding: 0 3px;
+  vertical-align: start;
+  border-right: 1px solid #5e5e5e;
+  color: cornflowerblue;
+}
+
+.ftText3 {
+  text-decoration: none;
+  height: 100%;
+  padding: 0 3px;
+  vertical-align: start;
+  color: cornflowerblue;
+}
+
+.ftText3:hover {
+  text-decoration: underline;
+}
+
+.ftText2:hover {
+  text-decoration: underline;
+}
+
+.ftText2:last-child {
+  border-right: 0;
 }
 
 .ftImage {
-  align-self: end;
+  align-self: center;
 }
 
 .secondLine {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .slText2 {
   margin-left: 10px;
-  align-content: center;
-  /* border: 1px solid red; */
   width: 17%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: x-small;
   height: 100%;
+  vertical-align: middle;
 }
