@@ -27,22 +27,22 @@
   position: relative;
   top: 5px;
   display: grid;
-	grid-template-columns: repeat(8, 10.5%) 1fr;
-	width: 70%;
-	height: 40px;
-	margin: 100px auto;
+  grid-template-columns: repeat(8, 10.5%) 1fr;
+  width: 70%;
+  height: 40px;
+  margin: 100px auto;
   border: 1px solid #757575;
   justify-items: center;
   align-items: center;
-	border-radius: 5px;
-	background: linear-gradient(#8c8c8c 50%,#757575 50%);
-	font-size: 14px;
-	line-height: 20px;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(#8c8c8c 50%, #757575 50%);
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
 .navBaritems {
-	margin: 0;
+  margin: 0;
   border-right: 1px solid black;
   padding: 9px;
   align-self: stretch;
@@ -55,7 +55,7 @@
 }
 
 .navBaritems:hover {
-	background-color: #424651;
+  background-color: #424651;
 }
 
 .navBaritems > .logo {
@@ -66,16 +66,15 @@
 }
 
 .searchBar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 95%;
-    width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 95%;
+  width: 90%;
 }
 
 .searchText {
   background: transparent;
-  /* color: transparent; */
   opacity: 1;
   border-radius: 15px;
   justify-self: center;
@@ -84,12 +83,11 @@
   width: 100%;
   padding: 2px 18px 1px 30px;
   outline: none;
-  border: 1px solid #444444;
+  border: 1px solid #444;
 }
 
 .searchText:focus {
   background: whitesmoke;
-  /* color: transparent; */
   border-radius: 15px;
   justify-self: center;
   height: 30px;
@@ -106,15 +104,15 @@
 }
 
 .header {
-	padding: 24px 0;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
+  padding: 24px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-	margin: 50px auto 10px auto;
-	color: whitesmoke;
+  margin: 50px auto 10px auto;
+  color: whitesmoke;
   font-family: 'Times New Roman', Times, serif;
   font-size: 50px;
   text-decoration: none;
@@ -122,8 +120,8 @@
 
 .secondLineHead {
   margin: 10px auto 10px auto;
-	color: whitesmoke;
-  font-family: Arial;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
@@ -133,8 +131,8 @@
   display: flex;
   flex-direction: row;
   margin: 10px auto 10px auto;
-	color: whitesmoke;
-  font-family: Arial;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
@@ -146,10 +144,9 @@
 .centerItemText {
   text-decoration: none;
   color: whitesmoke;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   background: transparent;
-  /* color: transparent; */
   opacity: 1;
 }
 
@@ -159,22 +156,25 @@
 }
 
 .centerItem:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .promos {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	/* border: 1px solid greenyellow; */
-	/* min-width: 1500px; */
-  width: 74.7%;
-	
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+  min-width: 1500px;
+  justify-content: space-between;
 }
 
 .promo {
-	object-fit: cover;
+  object-fit: cover;
   width: 100%;
-  padding: 3px 2px 0 0;
+  padding: 3px 1% 0 0;
+}
+
+.promo:last-child {
+  padding: 3px 0 0 0;
 }
 
 .footerMain {
@@ -184,19 +184,17 @@
 .firstLine {
   display: flex;
   flex-direction: row;
-  /* border: 2px solid greenyellow; */
   min-width: 950px;
   justify-content: space-between;
   align-items: center;
 }
 
 .ftText {
-font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
-font-size: x-small;
-margin: 0;
-text-decoration: none;
-color: #5E5E5E;
-/* border: 2px solid blueviolet; */
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: x-small;
+  margin: 0;
+  text-decoration: none;
+  color: #5e5e5e;
 }
 
 .flText2 {
@@ -205,19 +203,21 @@ color: #5E5E5E;
   font-size: x-small;
   height: 100%;
   justify-content: space-around;
-  vertical-align: text-top;
+  align-self: center;
+  margin-left: 10px;
 }
 
 .ftImage {
-	width: 15px;
-	height: 15px;
+  width: 15px;
+  height: 15px;
+  align-self: center;
 }
 
 .ftText2 {
   text-decoration: none;
   height: 100%;
   padding: 0 3px;
-  vertical-align: start;
+  vertical-align: middle;
   border-right: 1px solid #5e5e5e;
   color: cornflowerblue;
 }
@@ -242,10 +242,6 @@ color: #5E5E5E;
   border-right: 0;
 }
 
-.ftImage {
-  align-self: center;
-}
-
 .secondLine {
   margin-top: 10px;
   display: flex;
@@ -260,5 +256,4 @@ color: #5E5E5E;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
   font-size: x-small;
   height: 100%;
-  vertical-align: middle;
 }
