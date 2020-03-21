@@ -2,7 +2,7 @@
 This project is built referring old Apple Home page to understand on how Background and Gradients works in HTML with CSS.
 
 # Screenshot
-<img width="960" alt="Screenshot 2020-02-28 16 42 07" src="https://github.com/rajkumardas2701/Apple-Clone/blob/feature/img/screenshot.png">
+<img width="960" alt="Screenshot 2020-02-28 16 42 07" src="https://github.com/rajkumardas2701/Apple-Clone/blob/master/img/screenshot.png">
 
 # Built with
 1. HTML
