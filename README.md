@@ -27,4 +27,4 @@ Fork this project to your local machine
    Linkedin: <a href="https://www.linkedin.com/in/rajkumar-das-41308961">Rajkumar Das</a>
 
 # Show your support
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project.
