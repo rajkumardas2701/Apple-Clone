@@ -1,26 +1,20 @@
-* {
-  box-sizing: border-box;
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+body {
+  margin: 0;
+  padding: 0;
   height: 100vh;
-  min-width: 1500px;
+  min-height: 700px;
 }
 
 .mainSection {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   background: url("img/Hero1.jpg") no-repeat;
-  background-size: 1530px 760px;
-  height: 80%;
-  min-width: 1500px;
-  min-height: 700px;
-  width: 75%;
+  background-size: 100% 100%;
+  height: 70%;
+  min-width: 1000px;
+  min-height: 600px;
+  width: 80%;
 }
 
 .navBar {
@@ -29,40 +23,42 @@
   display: grid;
   grid-template-columns: repeat(8, 10.5%) 1fr;
   width: 70%;
-  height: 40px;
+  min-width: 700px;
+  height: 46px;
   margin: 100px auto;
   border: 1px solid #757575;
   justify-items: center;
-  align-items: center;
   border-radius: 5px;
   background: linear-gradient(#8c8c8c 50%, #757575 50%);
   font-size: 14px;
-  line-height: 20px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
-.navBaritems {
+.navBar > .navBaritems {
   margin: 0;
   border-right: 1px solid black;
-  padding: 9px;
-  align-self: stretch;
+  align-self: center;
   justify-self: stretch;
-  vertical-align: end;
   text-align: center;
-  max-height: 38px;
+  height: 46px;
   color: aliceblue;
   text-decoration: none;
+}
+
+.navBaritems > .p {
+  vertical-align: middle;
+  margin: 0;
 }
 
 .navBaritems:hover {
   background-color: #424651;
 }
 
-.navBaritems > .logo {
-  padding: 2px 0;
-  width: 21px;
-  height: 21px;
-  vertical-align: start;
+.logo {
+  width: 22px;
+  height: 22px;
+  align-self: center;
+  margin: 9px 0;
 }
 
 .searchBar {
@@ -104,18 +100,20 @@
 }
 
 .header {
-  padding: 24px 0;
+  padding: auto 0;
   text-align: center;
   display: flex;
   flex-direction: column;
+  min-height: 30%;
 }
 
-.title {
+h5 > .title {
   margin: 50px auto 10px auto;
   color: whitesmoke;
   font-family: 'Times New Roman', Times, serif;
   font-size: 50px;
   text-decoration: none;
+  font-weight: 100;
 }
 
 .secondLineHead {
@@ -153,6 +151,7 @@
 .play {
   height: 40px;
   width: 40px;
+  margin-left: 2%;
 }
 
 .centerItem:hover {
@@ -160,25 +159,53 @@
 }
 
 .promos {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 75%;
-  min-width: 1500px;
-  justify-content: space-between;
+  width: 80%;
+  min-width: 1000px;
+  justify-items: space-between;
+  margin: 0 auto;
+  height: 230px;
+  grid-auto-rows: minmax(250px, 1fr);
 }
 
-.promo {
-  object-fit: cover;
+.promo1 {
+  width: 99%;
+  height: 200px;
+  background: url("img/subImg1.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.promo2 {
+  background: url("img/subImg2.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 99%;
+  height: 200px;
+}
+
+.promo3 {
+  background: url("img/subImg3.jpg") no-repeat;
+  background-size: 100% 100%;
+  width: 99%;
+  height: 200px;
+}
+
+.promo4 {
+  background: url("img/subImg4.jpg") no-repeat;
+  background-size: 100% 100%;
   width: 100%;
-  padding: 3px 1% 0 0;
-}
-
-.promo:last-child {
-  padding: 3px 0 0 0;
+  height: 200px;
 }
 
 .footerMain {
-  margin: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+  min-width: 1000px;
+  height: 5vh;
 }
 
 .firstLine {
@@ -187,6 +214,13 @@
   min-width: 950px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.secondLine {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .ftText {
@@ -205,6 +239,7 @@
   justify-content: space-around;
   align-self: center;
   margin-left: 10px;
+  width: 50%;
 }
 
 .ftImage {
@@ -240,12 +275,6 @@
 
 .ftText2:last-child {
   border-right: 0;
-}
-
-.secondLine {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
 }
 
 .slText2 {
