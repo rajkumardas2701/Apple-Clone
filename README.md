@@ -9,7 +9,7 @@ This project is built referring old Apple Home page to understand on how Backgro
 2. CSS
 
 # Live Demo
-https://rawcdn.githack.com/rajkumardas2701/Apple-Clone/7abefa49e57c56c28968ff0c33fc46c11b47804d/index.html
+https://rawcdn.githack.com/rajkumardas2701/Apple-Clone/595e6468e40a18dfcc7a7bf435c7af64dd08b706/index.html
 
 # Getting Started
 To get a local copy up and running follow these simple example steps.
